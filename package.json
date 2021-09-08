@@ -1,0 +1,27 @@
+{
+  "name": "jsonresume-theme-paperalt",
+  "version": "0.1.0",
+  "description": "A modified version of the Paper theme for JSON Resume",
+  "main": "index.js",
+  "scripts": {
+    "start": "resume serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matheuscal/jsonresume-theme-paperalt"
+  },
+  "keywords": [
+    "resume",
+    "json",
+    "jsonresume"
+  ],
+  "author": "Matheus Calderon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheuscal/jsonresume-theme-paperalt/issues"
+  },
+  "homepage": "https://github.com/matheuscal/jsonresume-theme-paperalt#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
+}
