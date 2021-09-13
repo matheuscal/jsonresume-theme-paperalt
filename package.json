@@ -1,10 +1,10 @@
 {
   "name": "jsonresume-theme-paperalt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A modified version of the Paper theme for JSON Resume",
   "main": "index.js",
   "scripts": {
-    "start": "resume serve"
+    "start": "resume serve --theme paperalt"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "json",
     "jsonresume"
   ],
-  "author": "Matheus Calderon",
+  "author": "matheuscal",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/matheuscal/jsonresume-theme-paperalt/issues"

@@ -57,6 +57,7 @@
               </div>
             </div>
           </section>
+
           {{#location}}
             {{#ifCond address '||' city}}
               <section class="content">
@@ -72,12 +73,16 @@
                       </ul>
                     {{/if}}
                     {{#if city}}
+                    <ul>
+                      <li>City</li>
+                      <li>{{city}}</li>
+                    </ul>
+                    <ul>
                       {{#if postalCode}}
-                        <ul>
-                          <li>Postal Code & City</li>
-                          <li>{{postalCode}} {{city}}</li>
-                        </ul>
+                      <li>Postal Code</li>
+                      <li>{{postalCode}}</li>
                       {{/if}}
+                    </ul>
                     {{/if}}
                     {{#if region}}
                       <ul>
@@ -133,8 +138,38 @@
           </section>
           {{/if}}
 
-
-        
+          <!-- PROJECTS -->
+          {{#if resume.projects.length}}
+            {{#foreach resume.projects}}
+              {{#if $first}}
+              <section class="content">
+              {{else}}
+              <section class="content work-content">
+              {{/if}}
+              <div class="row">
+              <div class="content-cat big-text">
+                {{#if $first}}
+                  Experience
+                {{/if}}
+              </div>
+                <div class="content-text work-listing education-listing">
+                  <p>
+                    {{#if name}}
+                      <strong>{{name}}</strong>
+                      {{#if url}}
+                        — <a href="">{{url}}</a>
+                      {{/if}}
+                    {{/if}}
+                  </p>
+                  {{#if description}}
+                    <p>{{description}}</p>
+                  {{/if}}
+                </div>
+              </div>
+            </section>
+            {{/foreach}}
+          {{/if}}
+          
           {{#if resume.work.length}}
             {{#foreach resume.work}}
               {{#if $first}}
@@ -145,7 +180,7 @@
                   <div class="row">
                     <div class="content-cat big-text">
                       {{#if $first}}
-                        Work  Experience
+                        Work Experience
                       {{/if}}
                       {{#if startDate}}
                         {{#if endDate}}

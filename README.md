@@ -13,4 +13,6 @@ npm install jsonresume-theme-paperalt
 
 * Added an **About** section
 * Slightly increased the font size of section texts
-* Changed the variable name checked in the template from `website` to `url` to conform with the default schema naming convention
+* Changed the variable name checked in the template from `website` to `url` to conform with the [default schema naming convention](https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json)
+* Postal code label is now separated from city
+* Added support to the projects section, with an optional link following each project's name 
