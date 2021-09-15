@@ -149,7 +149,7 @@
               <div class="row">
               <div class="content-cat big-text">
                 {{#if $first}}
-                  Experience
+                  Recent Experience
                 {{/if}}
               </div>
                 <div class="content-text work-listing education-listing">
@@ -163,6 +163,9 @@
                   </p>
                   {{#if description}}
                     <p>{{description}}</p>
+                  {{/if}}
+                  {{#if sourceUrl}}
+                    <p>Source: <a href="{{sourceUrl}}">{{sourceUrl}}</a></p>
                   {{/if}}
                 </div>
               </div>

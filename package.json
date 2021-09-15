@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-paperalt",
-  "version": "0.2.0",
+  "version": "0.2.5",
   "description": "A modified version of the Paper theme for JSON Resume",
   "main": "index.js",
   "scripts": {
